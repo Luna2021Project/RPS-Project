@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+ }
+
+body {
+    font-family: 'Patrick Hand', sans-serif;    
+    font-weight: 400;
+    background-color: #F6E7D8;
+}
+
+/* header */
+
+header {    
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #1B1A17;    
+    padding: 10px 0 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* choice section */
+
+#choice {        
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    letter-spacing: 5px;    
+}
+
+#choice > div > p {
+    padding-bottom: 15px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.button {
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #1B1A17;
+    background-color: #557B83;
+    color: #EEEEEE;    
+    text-align: center;
+    width: 150px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;  
+}
+
+.button:hover {    
+    background-color: #97DBAE;
+    color: #1B1A17;    
+}
+
+.button:active {    
+    background-color: #874356;  
+    color: #EEEEEE;      
+}
+
+/* game area section */
+
+#game-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.scores {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+/* user area */
+
+.user {    
+    margin: 25px;
+    text-align: center;          
+}
+
+#user-image {
+    height: 280px;
+    border-radius: 2%;
+}
+
+/* computer area */
+
+.computer {    
+    margin: 25px;
+    text-align: center;    
+}
+
+#computer-image {
+    height: 280px;
+    border-radius: 2%;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;  
+    font-size: 1.5rem;
+    padding: 10px 0 20px;
+    background-color: #1B1A17;
+    color: #EEEEEE;
+}
+
+/* For medium screens size from 530px wide and down */
+
+@media screen and (max-width: 530px) {
+
+    header {            
+        font-size: 1.2rem;        
+    }
+
+    #choice > div > p {        
+        font-size: 1.5rem;
+    }
+
+    #choice > div {        
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+    }
+
+    .button {
+        margin-bottom: 5px;
+    }
+
+    .user {    
+        margin: 5px;                  
+    }
+
+    #user-image {
+        height: 200px;
+        border-radius: 2%;
+    }
+
+    .computer {    
+        margin: 5px;                  
+    }
+
+    #computer-image {
+        height: 200px;
+        border-radius: 2%;
+    }
+
+    footer {        
+        font-size: 1.2rem;
+        padding: 10px 0 20px;      
+    }
+}
