@@ -62,10 +62,13 @@ const getUserChoice = function userInput() {
 
 
   function buttonClicked(event) {
-    if (event.target.aria-label === "Rock") {
-        console.log("Deu certo");
+    alert("Deu certo!! Rock");
+    
+      /* if (person.Name = cells[0].textContent;event.target.aria-label.value === "Rock") {
+       alert("Deu certo!! Rock");
     }
-      /*  event.target.style.backgroundColor = "orange";
+      
+      event.target.style.backgroundColor = "orange";
     } else {
         event.target.style.backgroundColor = "green";
     } */
