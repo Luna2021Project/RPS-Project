@@ -4,130 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Receitas">
-    <meta name="keywords" content="receitas">  
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Receitas</title>
+    <link rel="stylesheet" href="assets/css/style.css">    
+    <title>Rock, Paper, Scissors Game</title>
+    <header>
+        <h2>Rock, Paper, Scissors</h2>
+    </header>
 </head>
 <body>
-    <header>        
-        <a href="index.html">
-            <h1 id="logo">Receitas</h1>
-        </a> 
-        <nav> 
-            <ul id="menu">
-                <li>
-                    <a href="signup.html">Inscreva-se</a>
-                </li>
-                <li>
-                    <a href="gallery.html">Galeria</a>
-                </li>
-                <li>
-                    <a href="index.html" class="active">Receitas</a>
-                </li>            
-            </ul>
-        </nav>
-    </header>
-    <section id="hero-outer">
-        <div id="hero-image"></div>
-        <div id="cover-text">
-            <h2>Receitas</h2>
-            <h3>Bolos, carnes, doces, lanches, massas, risotos, saladas, sobremesas, sopas, tortas</h3>
-        </div>
-    </section>       
-
-    <!-- <section id="club-ethos">
-            <h2 id="welcome">Why Love Running With Us?</h2>
-            <div id="left-about">
-                <div class="left-about-heading">
-                    <h2>Feel Healthy <i class="fas fa-heartbeat"></i></h2>
-                    <hr>
-                    <p>
-                        Since it improves aerobic fitness, running is a great way to help improve your cardiovascular
-                        health. Plus, it burns calories and can build strength.
-                    </p>
-                </div>
-                <div class="left-about-heading">
-                    <h2>Feel Free <i class="fab fa-fly"></i></h2>
-                    <hr>
-                    <p>
-                        Physical exercise, running included, is known to release endorphins in the brain. Endorphins make
-                        you more energetic, more awake and, yes, happier.
-                    </p>
-                </div>
-            </div>
-            <div id="right-about">
-                <div class="right-about-heading">
-                    <h2>Get Social <i class="fas fa-globe"></i></h2>
-                    <hr>
-                    <p>
-                        When we run with others, we can run farther and faster more easily. Social running can pull you out
-                        of a running funk or low mood, inspire you to try new events.
-                    </p>
-                </div>
-                <div class="right-about-heading">
-                    <h2>Feel Strong <i class="fas fa-dumbbell"></i></h2>
-                    <hr>
-                    <p>
-                        Running strengthens your heart by pumping blood more effectively through your body.
-                    </p>
-                </div>
-            </div>
-    <div id="center-about">
-        <div id="circle-container">
-            <div id="circle-cover-bg"></div>
-        </div>
-    </div> 
-    </section> -->
-    <section id="times">
-        <div id="times1-container">
-            <h2>Bolos </h2>
-            <h2>Doces</h2>
-            <h2>Sobremesas</h2>
-        </div>
-        <div id="times2-container">
-            <h2>Carnes </h2>
-        </div>
-        <div id="times3-container">
-            <h2>Lanches </h2>
-            <h2>Tortas</h2>
-        </div>
-        <div id="times4-container">
-            <h2>Risotos </h2>
-            <h2>Saladas</h2>
-            <h2>Sopas</h2>
-        </div>
-        <div id="times5-container">
-            <h2>Massas </h2>
+    <section id="choice">    
+        <div>
+            <p>Make a choice</p>
+            <button aria-label="Rock" class="button">Rock</button>
+            <button aria-label="Paper" class="button">Paper</button>
+            <button aria-label="Scissors" class="button">Scissors</button>
         </div>
     </section>
-
+    <section id="game-area">
+        <div id="messages"></div>
+        <div class="user">
+            <h3 class="scores">Your score: <span id="user-score">0</span></h3>
+            <img id="user-image" alt="Rock Paper Scissors" src="./assets/images/main-image.webp">
+        </div>
+        <div class="computer">
+            <h3 class="scores">Computer score: <span id="computer-score">0</span></h3>
+            <img id="computer-image" alt="Rock Paper Scissors" src="./assets/images/main-image.webp">
+        </div>
+    </section>    
     <footer>
-        <ul class="social-networks">
-            <li>
-                <a href="https://facebook.com" target="_blank" rel="noopener"
-                    aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
-            </li>
-            <li>
-                <a href="https://instagram.com" target="_blank" rel="noopener"
-                    aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li>
-                <a href="https://pinterest.com" target="_blank" rel="noopener"
-                    aria-label="Visit our Pinterest page (opens in a new tab)"><i class="fab fa-pinterest-square"></i></a>
-            </li>
-            <li>
-                <a href="https://twitter.com" target="_blank" rel="noopener"
-                    aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
-            </li>
-            <li>
-                <a href="https://youtube.com" target="_blank" rel="noopener"
-                    aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
-            </li>           
-        </ul>
+        <div>
+            <h3>Rules</h3>
+            <p>Scissors cut Paper - Paper covers Rock - Rock blunts Scissors</p>
+        </div>
     </footer>
 
-    <!-- font awesome script -->
-    <script src="https://kit.fontawesome.com/99ccac5eff.js" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+   
 </body>
-</html> 
+</html>
